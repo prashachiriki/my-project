@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* Simple selectors */
+p { color: blue; }              /* element */
+#id1 { color: red; }           /* id */
+.cls { background: yellow; }   /* class */
+h1, h2 { color: green; }       /* group */
+* { font-family: Arial; }      /* universal */
+
+/* Combinators */
+div p { color: purple; }       /* descendant */
+div > h3 { color: orange; }    /* child */
+h4 + p { color: brown; }       /* adjacent sibling */
+h5 ~ p { color: pink; }        /* general sibling */
+
+/* Pseudo-class */
+a:hover { color: red; }
+
+/* Pseudo-element */
+p::first-letter { font-size: 20px; }
+
+/* Attribute selector */
+input[type="text"] { border: 2px solid blue; }
+
+</style>
+</head>
+
+<body>
+
+<h1 id="id1">Heading</h1>
+<h2>Group selector</h2>
+
+<p class="cls">Paragraph</p>
+
+<div>
+  <p>Inside div</p>
+  <h3>Child element</h3>
+</div>
+
+<h4>Adjacent</h4>
+<p>Next paragraph</p>
+
+<h5>General</h5>
+<p>Para1</p>
+<p>Para2</p>
+
+<a href="#">Hover me</a><br><br>
+
+<input type="text">
+
+</body>
+</html>
